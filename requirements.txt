@@ -1,0 +1,6 @@
+# Requirements for iterative-llm-research-pipeline
+
+duckduckgo_search>=0.8.0
+beautifulsoup4>=4.11.1
+ipython>=7.0.0
+ollama>=0.1.0
