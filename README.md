@@ -42,7 +42,7 @@ Clone this repository:
 
 ```
 git clone https://github.com/vbianchi/iterative-llm-research-ollama.git
-cd <repository-name>
+cd iterative-llm-research-ollama
 ```
 
 Install dependencies using the provided `requirements.txt`:
