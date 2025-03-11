@@ -22,24 +22,17 @@ Overview
 The pipeline integrates:
 
 -   **Local AI models** (via Ollama)
-
 -   **Web scraping** (DuckDuckGo)
-
 -   **Iterative refinement** (AI-based reflection and revision)
-
 -   **Structured logging** for tracking research progress
 
 Features
 --------
 
 -   Generates an initial extensive answer to a research question.
-
 -   Identifies gaps and formulates targeted search queries.
-
 -   Performs web research to collect additional context.
-
 -   Iteratively refines answers based on accumulated web content.
-
 -   Outputs a polished Markdown essay with clearly cited sources.
 
 Installation
@@ -48,7 +41,7 @@ Installation
 Clone this repository:
 
 ```
-git clone <your-repo-url>
+git clone https://github.com/vbianchi/iterative-llm-research-ollama.git
 cd <repository-name>
 ```
 
@@ -61,7 +54,6 @@ pip install -r requirements.txt
 Ensure you have an Ollama server running locally:
 
 -   Install and run Ollama: <https://ollama.ai/>
-
 -   Model used by default: `llama3.2`
 
 Usage
@@ -70,17 +62,14 @@ Usage
 Run the script from your command line or in a Jupyter notebook:
 
 ```
-python your_script_name.py
+iterative_llm_2.0.ipynb
 ```
 
 You will be prompted to enter your research topic. The pipeline will then:
 
 1.  Generate an initial extensive answer.
-
 2.  Identify gaps and create follow-up queries.
-
 3.  Perform iterative web research and refinement.
-
 4.  Output a comprehensive essay in Markdown format.
 
 The final output and logs are saved as timestamped files in your working directory.
@@ -91,15 +80,10 @@ Configuration
 You can modify the script's configuration parameters directly in the `Configuration` class within the script, including:
 
 -   `ollama_base_url`: URL to your local Ollama server.
-
 -   `local_llm`: Specify the local AI model.
-
 -   `fetch_full_page`: Enable or disable fetching full webpage content.
-
 -   `max_web_research_loops`: Number of research iterations.
-
 -   `max_fetch_pages`: Number of search results to process each iteration.
-
 -   `max_token_per_search`: Token limit per search for content management.
 
 Output
@@ -108,7 +92,6 @@ Output
 The pipeline produces two main outputs:
 
 -   **Markdown Essay**: `final_output_<timestamp>.md`
-
 -   **Research Log**: `research_log_<timestamp>.txt`
 
 The Markdown essay includes clearly referenced sources to ensure traceability and fact-checking.
@@ -119,11 +102,8 @@ Dependencies
 Key Python packages include:
 
 -   `beautifulsoup4`
-
 -   `duckduckgo_search`
-
 -   `ollama`
-
 -   `IPython`
 
 (Complete dependencies listed in `requirements.txt`)
