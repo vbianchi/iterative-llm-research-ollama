@@ -1,4 +1,4 @@
 # Requirements for iterative-llm-research-pipeline
 beautifulsoup4==4.12.3
-IPython==8.25.0
+ipython==8.25.0
 duckduckgo_search==7.5.1
