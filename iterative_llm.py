@@ -342,7 +342,7 @@ def research_pipeline() -> None:
     
     config = Configuration(
         ollama_base_url="http://localhost:11434",  # Your Ollama URL
-        local_llm="deepseek-r1:8b",                      # Default LLM is "llama3.2"
+        local_llm="gemma3",                      # Default LLM is "llama3.2"
         fetch_full_page=True,                      # Fetch full page content if needed
         max_web_research_loops=20,                  # Number of research iterations
         max_fetch_pages=5,                         # Number of pages to fetch per search
